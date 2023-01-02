@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+        <style>
+            body{
+                background-image: url("https://images.squarespace-cdn.com/content/v1/59c4f88bd7bdce1454815703/1581954545605-6OWVVMPU33UJPY6L5DDX/2020-02-17.jpg?format=2500w");
+                font-family: 'Poppins' sans-serif;
+            }
+            #survey{
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                padding: 40px;
+                background-color: rgb(33, 132, 245);
+                
+            }
+            
+            label{
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+            input, button, select, textarea {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: 'Poppins' sans-serif;
+            font-size: 25;
+            height: 40px;
+            width: 100%;
+            }
+            input[type=radio], [type=checkbox] {
+                align-items: left;
+                width: auto;
+                display: block;
+            } 
+        </style>
+</head>
+<body>
+    <div id="survey">
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name</label> <input type="text" id="name" placeholder="Enter your name" required> </br>
+        <label id="email-label">Email</label> <input type="email" id="email" placeholder="Enter your email" required> </br>
+        <label id="number-label">Age (optional)</label> <input type="number" placeholder="Age" name="" id="number" min="1" max="3"></br>
+        Which option best describes your current role? 
+        <select name="options" id="dropdown">
+          <option value="select current role">select current role</option>  
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full-time lecturer</option>
+          <option value="Full Time Learner">Full-time student</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Others">Others</option>
+        </select></br>
+        Would you recommend freeCodeCamp to a friend? <br>
+        <label for="Definitely"><input type="radio" value="rad" name="recommend" value="Definitely">Definitely
+        
+        </label>
+        <label for="maybe"><input type="radio" value="rad" name="recommend">Maybe
+        
+    </label> 
+        <label for="Not sure"><input type="radio" name="recommend" value="rad" >Not Sure
+         
+    </label> 
+        What is your favorite feature on freeCodeCamp?
+        <select name="options" id="dropdown">
+            <option value="select current role">Select an option</option>  
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open source">Open source</option>
+          </select></br>
+          What Would you like to see improved? (check all that apply) <br>
+          
+        <label for="Front-end Projects"><input type="checkbox" value="rec" name="recommend">Front-end Projects</label>
+        
+        <label for="Back-end Projects"><input type="checkbox" value="rec" name="recommend">Back-end Projects</label>
+        
+        <label for="Data Visualization"><input type="checkbox" name="recommend" value="rec" >Data Visualization</label>
+        
+        <label for="Challenges"><input type="checkbox" value="rec" name="recommend">Challenges</label>
+        
+        <label for="Open source Community"><input type="checkbox" value="rec" name="recommend">Open Source Community</label>
+        
+        <label for="Gitter help rooms"><input type="checkbox" name="recommend" value="rec" >Gitter help rooms</label>
+        
+        <label for="Videos"><input type="checkbox" value="rec" name="recommend">Videos</label>
+        
+        <label for="City Meetups"><input type="checkbox" value="rec" name="recommend">City Meetups</label>
+        
+        <label for="Wiki"><input type="checkbox" name="recommend" value="rec" >Wiki</label> <br>
+        Any comments or suggestions? <br>
+        <textarea name="comment" id="comment" cols="30" rows="10">Enter your comment here</textarea>
+        <button id="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
