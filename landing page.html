@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #eee;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        #header{
+            padding: 32px;
+            display: flex;
+            flex-direction: row;
+            width: 99%;
+            position: fixed;
+           
+            background-color: #eee;
+            top: 0%;
+        } 
+        li{
+            list-style: none;
+            padding: 0 20px;
+            display: inline-block;
+            font-size: 1.5em;
+        }
+        #navbar ul {
+            width: 45%;
+            position: fixed;
+            display: flex;
+            
+            margin-right: 10%;
+            padding: 20px;
+        }
+        li{
+            margin-right: 40px;
+        }
+        .logo {
+            float: left;
+            width: 50%;
+            height: 100;
+            min-width: 300px;
+            margin-left: 20px;
+
+        }
+        .landing{
+            width: 500px;
+        }
+        #how-it-works #video{
+            display: flex;
+            height: 515px;
+            justify-content: center;
+            width: 100%;
+            max-width: 5600px;
+            margin: 10px;
+            padding: 20px;
+        }
+        main{
+            width: 95%;
+            
+            display: grid;
+            flex-direction: row;
+            margin: 0 50px;
+            padding: 50px;
+            height: 1800px;
+        }
+        #form {
+            margin-top: 100px;
+            text-align: center;
+            padding: ;
+            height: 150px;
+            
+        }
+        input {
+            display: flex;
+            width: 40%;
+            height: 40px;
+            margin: auto;
+            font-size: 20px;
+        }
+        #btn {
+            display: flex;
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            font-size: 20px;
+            text-align: center;
+            background-color: rgb(245, 245, 70);
+            font-size: 2.0em;
+            font-weight: bolder;
+        }
+        
+        .frst {
+            
+            width: 100%;
+            height: 800px;
+            margin: 5px;  
+            display: grid;      
+        }
+        .premium, .fast, .quality {
+            padding: 20px;
+            font-size: 1.5em;
+            margin-left: 20px;
+            text-align: left;
+        }
+        #plogo{
+            float: left;
+        }
+        #truck {
+            float: left;
+        }
+        #battery {
+            float: left;
+        }
+        .scnd{
+            width: 100%;
+        }
+        .tenor{
+            width: 32.5%;
+            margin-right: 15px;
+            padding: 0px;
+            float: left;
+            height: 350px;
+            border: 2px solid black;
+            line-height: 2.5em;
+        }
+        .bass{
+            width: 32.5%;
+            float: left;
+            height: 350px;
+            border: 2px solid black;
+            margin-right: 15px;
+            padding: 0px;
+            line-height: 2.5em;
+        }
+        .valve{
+            width: 32.5%;
+            margin-right: 15px;
+            padding: 0px;
+            height: 350px;
+            border: 2px solid black;
+            float: left;
+            line-height: 2.5em;
+        }
+        .footer{
+            margin-top: 100px;
+            text-align: right;
+            background-color: rgb(217, 221, 197);
+            font-size: 1.2em;
+            padding: 20px;
+        }
+        .scnd  .r1 {
+            text-align: center;
+            background-color: rgb(214, 214, 191);
+            margin: 0 0 20px 0;
+        }
+        .scnd p, h2 {
+            text-align: center;
+        }
+        .select{
+            width: 200px;
+            text-align: center;
+            background-color: yellow;
+            font-size: 2em;
+            margin-left: 190px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="product-landing-page-logo" class="landing">
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-link">Features</li>
+                <li class="nav-link">How it works</li>
+                <li class="nav-link">Pricing</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" id="form">
+            <label for="email"><h1>Hancrafted, home-made masterpieces</h1>  <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+            </label> <br>
+            <button id="btn">Get Started</button>
+        </form>
+        <div class="frst">
+            <div class="premium">
+                <img src="Images/fire.jpg" alt="logo" id='plogo'>
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+            <div class="fast">
+                <img src="Images/truck.jpg" alt="truck-logo" id='truck'>
+                <h2>Fast shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+            <div class="quality">
+                <img src="Images/charge.jpg" alt="battery-logo" id='battery'>
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+            <video src=""></video>
+        </div>
+        <section id="how-it-works">
+            <iframe id="video"   src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+          </section>
+        <div class="scnd">
+            <div class="tenor">
+                <h1 class="r1">Tenor Trombone</h1>
+                <h2>$600</h2>
+                <p>Lorem ipsum. <br> Lorem ipsum. <br> Lorem ipsum dolor. <br> Lorem ipsum.</p>
+                <button class="select">Select</button>
+            </div>
+            <div class="bass">
+                <h1 class="r1">Bass Trombone</h1>
+                <h2>$600</h2>
+                <p>Lorem ipsum. <br> Lorem ipsum. <br> Lorem ipsum dolor. <br> Lorem ipsum.</p>
+                <button class="select">Select</button>
+            </div>
+            <div class="valve">
+                <h1 class="r1">Valve Trombone</h1>
+                <h2>$600</h2>
+                <p>Lorem ipsum. <br> Lorem ipsum. <br> Lorem ipsum dolor. <br> Lorem ipsum.</p>
+                <button class="select">Select</button>
+            </div>
+        </div>
+        <div class='footer'>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul> 
+            <p>Copywright 2016, Original Trombones</p>
+        </div>
+    </main>
+
+</body>
+</html>
